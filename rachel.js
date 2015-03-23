@@ -14,9 +14,11 @@ for(var i = 0; i < rach.length;i++) {
 }
 
 for (var key in triggerSet) {
-  // if (triggerSet[key].length) {
-    console.log("+",  key);
-    console.log(triggerSet[key])
-  // }
+  console.log("+",  key);
+  for (var i = 0; i < triggerSet[key].length; i++) {
+    console.log("-", triggerSet[key][i]);
+  }
+  console.log("\n");
 }
+
 
